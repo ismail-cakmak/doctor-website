@@ -1,0 +1,278 @@
+.admin-specialty-editor {
+  max-width: 900px;
+  position: relative;
+}
+
+.admin-success-notification {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #10b981;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  z-index: 1000;
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.admin-specialty-editor-header {
+  margin-bottom: 2rem;
+}
+
+.admin-specialty-editor-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #e2e8f0;
+  color: #2d3748;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+
+.admin-specialty-editor-back:hover {
+  background: #cbd5e0;
+}
+
+.admin-specialty-editor-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.admin-specialty-editor-subtitle {
+  font-size: 1.125rem;
+  color: #718096;
+  margin: 0;
+}
+
+.admin-specialty-editor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.admin-specialty-editor-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-specialty-section-header {
+  margin-bottom: 1.5rem;
+}
+
+.admin-specialty-section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.admin-specialty-section-header p {
+  color: #718096;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.admin-specialty-editor-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-specialty-editor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-specialty-editor-label {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.required {
+  color: #e53e3e;
+}
+
+.admin-specialty-editor-input,
+.admin-specialty-editor-select {
+  padding: 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.admin-specialty-editor-input:focus,
+.admin-specialty-editor-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.admin-specialty-editor-input.error {
+  border-color: #fc8181;
+}
+
+.admin-specialty-editor-input.disabled {
+  background-color: #f7fafc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.admin-specialty-editor-help {
+  font-size: 0.875rem;
+  color: #718096;
+  margin: 0;
+}
+
+.admin-specialty-editor-error {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.admin-specialty-editor-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-specialty-editor-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-specialty-editor-btn.cancel {
+  background: #e2e8f0;
+  color: #2d3748;
+}
+
+.admin-specialty-editor-btn.cancel:hover {
+  background: #cbd5e0;
+}
+
+.admin-specialty-editor-btn.save {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.admin-specialty-editor-btn.save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .admin-specialty-editor {
+    max-width: 100%;
+  }
+  
+  .admin-specialty-editor-title {
+    font-size: 2rem;
+  }
+  
+  .admin-specialty-editor-subtitle {
+    font-size: 1rem;
+  }
+  
+  .admin-specialty-editor-section {
+    padding: 1.5rem;
+  }
+  
+  .admin-specialty-section-header h2 {
+    font-size: 1.25rem;
+  }
+  
+  .admin-specialty-editor-fields {
+    gap: 1.25rem;
+  }
+  
+  .admin-specialty-editor-actions {
+    flex-direction: column-reverse;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .admin-specialty-editor-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-specialty-editor-title {
+    font-size: 1.5rem;
+  }
+  
+  .admin-specialty-editor-subtitle {
+    font-size: 0.875rem;
+  }
+  
+  .admin-specialty-editor-section {
+    padding: 1rem;
+  }
+  
+  .admin-specialty-section-header h2 {
+    font-size: 1.125rem;
+  }
+  
+  .admin-specialty-editor-fields {
+    gap: 1rem;
+  }
+  
+  .admin-specialty-editor-input,
+  .admin-specialty-editor-select {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .admin-specialty-editor-actions {
+    padding: 1rem;
+  }
+  
+  .admin-specialty-editor-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+}

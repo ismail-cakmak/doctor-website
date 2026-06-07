@@ -1,0 +1,56 @@
+================================================================================
+  IMPORTANT: SUPABASE ENVIRONMENT VARIABLES SETUP
+================================================================================
+
+You need to add your Supabase credentials to complete the integration.
+
+STEP 1: Edit the .env file
+---------------------------
+Location: /home/ismailcakmak/DEV/doctor-website/.env
+
+Open this file and replace the placeholder values with your actual credentials:
+
+VITE_SUPABASE_URL=https://your-project-id.supabase.co
+VITE_SUPABASE_ANON_KEY=your-actual-anon-key-here
+
+
+STEP 2: Find your credentials
+------------------------------
+1. Go to https://supabase.com
+2. Open your project
+3. Click "Project Settings" (gear icon)
+4. Click "API" in the left menu
+5. Copy:
+   - Project URL (looks like: https://xxxxx.supabase.co)
+   - anon public key (long string starting with "eyJ...")
+
+
+STEP 3: Create database tables
+-------------------------------
+1. In Supabase dashboard, click "SQL Editor"
+2. Click "New query"
+3. Copy the SQL code from SUPABASE_SETUP.md file
+4. Run it
+
+
+STEP 4: Test
+------------
+After adding credentials:
+1. Save the .env file
+2. Restart your dev server: npm run dev
+3. Visit http://localhost:5173
+4. Check if blog posts and specialties load
+
+
+STEP 5: Deploy to Netlify
+--------------------------
+Add the same environment variables in Netlify:
+1. Netlify Dashboard → Your Site → Site Settings
+2. Environment variables → Add variable
+3. Add both VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY
+
+
+================================================================================
+For detailed instructions, see: SUPABASE_SETUP.md
+================================================================================
+

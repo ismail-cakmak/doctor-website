@@ -1,0 +1,144 @@
+.location-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #f9fafb, #ffffff);
+}
+
+.location-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.location-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.location-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .location-title {
+    font-size: 2rem;
+  }
+}
+
+.location-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .location-content {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.location-map-wrapper {
+  width: 100%;
+  height: 450px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .location-map-wrapper {
+    height: 350px;
+  }
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-info-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.location-info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.location-info-icon-wrapper {
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.location-info-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+
+.location-info-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.location-info-text {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.location-info-text p {
+  margin: 0.25rem 0;
+}
+
+.location-info-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #14b8a6;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.location-info-link:hover {
+  color: #0d9488;
+}
+
+.hover-link {
+  color: #14b8a6 !important;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.hover-link:hover {
+  color: #0d9488 !important;
+  text-decoration: underline;
+}
+
+
+

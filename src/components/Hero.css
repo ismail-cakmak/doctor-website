@@ -1,0 +1,198 @@
+.hero-section {
+  position: relative;
+  background: linear-gradient(to bottom right, rgb(20 184 166), rgb(13 148 136));
+  color: white;
+  padding: 3rem 0;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+    min-height: 600px;
+  }
+}
+
+/* Background image layer - absolute positioning allows it to fill the entire section 
+   while staying behind the content */
+.hero-background-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-image: url('/mobile doctor.jpg');
+}
+
+@media (min-width: 768px) {
+  .hero-background-image {
+    background-image: url('/doctor.jpg');
+  }
+}
+
+/* Overlay layer - absolute positioning creates a darkening effect on top of the image
+   This improves text readability by dimming the background */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgb(13 148 136 / 0.7), rgb(15 118 110 / 0.7));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: rgb(204 251 241);
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: rgb(204 251 241);
+  line-height: 1.75;
+}
+
+.hero-about-btn {
+  display: inline-block;
+  background-color: white;
+  color: rgb(13 148 136);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.hero-about-btn:hover {
+  background-color: rgb(240 253 250);
+}
+
+.hero-contact-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-contact-card {
+    padding: 2.5rem;
+  }
+}
+
+.hero-contact-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-contact-title {
+    font-size: 1.875rem;
+  }
+}
+
+.hero-call-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hero-call-btn {
+  width: 100%;
+  background-color: white;
+  color: rgb(13 148 136);
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.hero-call-btn:hover {
+  background-color: rgb(240 253 250);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-call-btn span {
+  font-size: 1.125rem;
+}
+
+.hero-phone-number {
+  text-align: center;
+  color: rgb(204 251 241);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.hero-whatsapp-btn {
+  width: 100%;
+  background-color: #25D366;
+  color: white;
+  padding: 1.25rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.hero-whatsapp-btn:hover {
+  background-color: #20BA5A;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-whatsapp-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: currentColor;
+}
+
+.hero-availability-text {
+  text-align: center;
+  color: rgb(204 251 241);
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+

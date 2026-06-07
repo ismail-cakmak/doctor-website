@@ -1,0 +1,269 @@
+.admin-videos-list {
+  max-width: 1200px;
+}
+
+.admin-videos-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-videos-list-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.admin-videos-list-subtitle {
+  font-size: 1rem;
+  color: #718096;
+}
+
+.admin-videos-add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.admin-videos-add-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.admin-videos-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.admin-video-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.admin-video-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.admin-video-card.inactive {
+  opacity: 0.6;
+}
+
+.admin-video-card-preview {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  background: #000;
+}
+
+.admin-video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.admin-video-inactive-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 0.5rem;
+}
+
+.admin-video-card-content {
+  padding: 1.5rem;
+}
+
+.admin-video-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.admin-video-card-url {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-bottom: 1rem;
+  word-break: break-all;
+}
+
+.admin-video-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-video-card-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.admin-video-card-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.admin-video-card-status.active {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.admin-video-card-status.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-video-card-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-video-card-btn {
+  flex: 1;
+  min-width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.admin-video-card-btn.show {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.admin-video-card-btn.show:hover {
+  background: #bfdbfe;
+}
+
+.admin-video-card-btn.hide {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.admin-video-card-btn.hide:hover {
+  background: #fde68a;
+}
+
+.admin-video-card-btn.edit {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.admin-video-card-btn.edit:hover {
+  background: #c7d2fe;
+}
+
+.admin-video-card-btn.delete {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-video-card-btn.delete:hover {
+  background: #fecaca;
+}
+
+.admin-videos-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-videos-empty svg {
+  color: #cbd5e0;
+  margin-bottom: 1rem;
+}
+
+.admin-videos-empty p {
+  font-size: 1.125rem;
+  color: #718096;
+  margin-bottom: 1.5rem;
+}
+
+.admin-videos-empty-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.admin-videos-empty-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+@media (max-width: 768px) {
+  .admin-videos-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-videos-list-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .admin-videos-add-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

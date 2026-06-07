@@ -1,0 +1,96 @@
+.specialties-section {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+}
+
+.specialties-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.specialties-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .specialties-title {
+    font-size: 2.25rem;
+  }
+}
+
+.specialties-subtitle {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .specialties-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.specialty-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.specialty-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #ccfbf1;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.specialty-card:hover .specialty-icon-wrapper {
+  background-color: #0d9488;
+}
+
+.specialty-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #0d9488;
+  transition: color 0.3s;
+}
+
+.specialty-card:hover .specialty-icon {
+  color: white;
+}
+
+.specialty-title {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.specialty-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+

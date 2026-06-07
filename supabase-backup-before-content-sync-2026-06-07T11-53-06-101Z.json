@@ -1,0 +1,170 @@
+{
+  "backupDate": "2026-06-07T11:53:04.053Z",
+  "source": "https://whakkbaavxhbwmedzxdj.supabase.co",
+  "tables": {
+    "blog_posts": [
+      {
+        "id": 1,
+        "slug": "kalp-sagligini-korumak-icin-10-ipucu",
+        "title": "Kalp Sağlığını Korumak İçin 10 İpucu",
+        "excerpt": "Kalbinizi sağlıklı tutmak ve kardiyovasküler risk faktörlerini azaltmak için temel stratejileri öğrenin.",
+        "content": "<p>Kalp sağlığı, genel sağlığınızın en önemli parçalarından biridir. Düzenli egzersiz, dengeli beslenme ve stres yönetimi kalp sağlığınızı korumanın temel taşlarıdır.</p>",
+        "image": "/medical-research-lab.png",
+        "author": "Dr. Sabri Keser",
+        "category": "Kardiyoloji",
+        "read_time": "5 dakika",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 2,
+        "slug": "yillik-kontrollerin-onemi",
+        "title": "Yıllık Kontrollerin Önemi",
+        "excerpt": "Düzenli sağlık taramalarının erken teşhis ve önleme için neden çok önemli olduğunu keşfedin.",
+        "content": "<p>Yıllık sağlık kontrolleri, hastalıkların erken teşhisinde hayati öneme sahiptir.</p>",
+        "image": "/doctor-medical-office.png",
+        "author": "Dr. Sabri Keser",
+        "category": "Koruyucu Hekimlik",
+        "read_time": "4 dakika",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 3,
+        "slug": "kronik-hastaliklari-yonetmek",
+        "title": "Kronik Hastalıkları Etkili Bir Şekilde Yönetmek",
+        "excerpt": "Doğru yönetim ve yaşam tarzı değişiklikleri ile kronik hastalıklarla iyi yaşamaya dair uzman tavsiyeleri.",
+        "content": "<p>Kronik hastalıklar doğru yönetim stratejileri ile kontrol altında tutulabilir.</p>",
+        "image": "/medical-consultation.png",
+        "author": "Dr. Sabri Keser",
+        "category": "Kronik Hastalık",
+        "read_time": "6 dakika",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      }
+    ],
+    "specialties": [
+      {
+        "id": 1,
+        "slug": "androloji",
+        "title": "Androloji",
+        "description": "Erkek sağlığı ve cinsel işlev",
+        "icon": "Stethoscope",
+        "what_is": "<h3>Androloji Nedir?</h3><p>Androloji, erkek üreme sistemi ve cinsel sağlık sorunlarının tanı ve tedavisi ile ilgilenen tıp dalıdır.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 2,
+        "slug": "erkek-infertilitesi",
+        "title": "Erkek İnfertilitesi",
+        "description": "Kısırlık tanı ve tedavisi",
+        "icon": "Users",
+        "what_is": "<h3>Erkek İnfertilitesi Nedir?</h3><p>Erkek infertilitesi, çiftlerin çocuk sahibi olamamasında erkek faktörlerin rol oynadığı durumdur.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 3,
+        "slug": "erektil-disfonksiyon",
+        "title": "Erektil Disfonksiyon",
+        "description": "Sertleşme sorunu için çözümler",
+        "icon": "Activity",
+        "what_is": "<h3>Erektil Disfonksiyon Nedir?</h3><p>Cinsel ilişki için yeterli ereksiyonu sağlayamama veya sürdürememe durumudur.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 4,
+        "slug": "prematur-ejekulasyon",
+        "title": "Prematür Ejekülasyon",
+        "description": "Erken boşalma yönetimi",
+        "icon": "Activity",
+        "what_is": "<h3>Prematür Ejekülasyon Nedir?</h3><p>İstenenden daha erken boşalma durumudur.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 5,
+        "slug": "peyronie-penis-egriligi",
+        "title": "Peyronie (Penis Eğriliği)",
+        "description": "Değerlendirme ve tedavi",
+        "icon": "Droplets",
+        "what_is": "<h3>Peyronie Hastalığı Nedir?</h3><p>Penis dokusunda plak oluşumu sonucu penisin eğrilmesi durumudur.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 6,
+        "slug": "penil-protez-genital-estetik",
+        "title": "Penil Protez & Genital Estetik",
+        "description": "Mutluluk çubuğu ve estetik cerrahiler",
+        "icon": "Slice",
+        "what_is": "<h3>Penil Protez ve Genital Estetik Nedir?</h3><p>İlaç tedavisine yanıt vermeyen erektil disfonksiyon için protez implantasyonu.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 7,
+        "slug": "eswt-sok-dalga",
+        "title": "ESWT Şok Dalga",
+        "description": "İlaçsız fonksiyon destek tedavisi. deneme",
+        "icon": "Waves",
+        "what_is": "<h3>ESWT Şok Dalga Tedavisi Nedir? lo</h3><p>Düşük yoğunluklu şok dalgaları kullanarak doku rejenerasyonunu artıran tedavi.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 8,
+        "slug": "prp-eksozom-kok-hucre",
+        "title": "PRP / Eksozom / Kök Hücre",
+        "description": "Rejeneratif uygulamalar",
+        "icon": "Syringe",
+        "what_is": "<h3>Rejeneratif Tıp Uygulamaları Nedir?</h3><p>Vücudun kendi iyileşme mekanizmalarını kullanan tedavi yöntemleri.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 9,
+        "slug": "kronik-prostatit",
+        "title": "Kronik Prostatit",
+        "description": "Neden odaklı tanı ve tedavi",
+        "icon": "Microscope",
+        "what_is": "<h3>Kronik Prostatit Nedir?</h3><p>Prostat bezinin uzun süreli iltihaplanması durumudur.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 10,
+        "slug": "bph-iyi-huylu-prostat",
+        "title": "BPH (İyi Huylu Prostat)",
+        "description": "İlaç ve girişimsel seçenekler",
+        "icon": "Shield",
+        "what_is": "<h3>BPH Nedir?</h3><p>Prostat bezinin yaşla birlikte büyümesi durumudur.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 11,
+        "slug": "tas-cerrahisi",
+        "title": "Taş Cerrahisi",
+        "description": "Böbrek ve üreter taşı endoürolojisi",
+        "icon": "TestTube",
+        "what_is": "<h3>Taş Cerrahisi Nedir?</h3><p>Böbrek, üreter ve mesane taşlarının minimal invaziv tedavisi.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      },
+      {
+        "id": 12,
+        "slug": "pelvik-organ-sarkmasi",
+        "title": "Pelvik Organ Sarkması",
+        "description": "Cerrahi ve cerrahi dışı çözümler",
+        "icon": "Pill",
+        "what_is": "<h3>Pelvik Organ Sarkması Nedir?</h3><p>Pelvik bölge organlarının normal pozisyonlarından aşağı kayması.</p>",
+        "created_at": "2026-06-07T11:00:25.954045+00:00",
+        "updated_at": "2026-06-07T11:00:25.954045+00:00"
+      }
+    ],
+    "videos": []
+  }
+}

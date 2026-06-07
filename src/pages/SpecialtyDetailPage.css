@@ -1,0 +1,534 @@
+.specialty-detail-page {
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(to bottom, #f0fdfa, #ffffff);
+  padding: 4rem 0;
+}
+
+.specialty-detail-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.specialty-detail-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-detail-icon-wrapper {
+  display: inline-flex;
+  padding: 1.5rem;
+  background: linear-gradient(to bottom right, rgb(20 184 166), rgb(13 148 136));
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.specialty-detail-icon {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+
+.specialty-detail-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(13 148 136);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .specialty-detail-title {
+    font-size: 3rem;
+  }
+}
+
+.specialty-detail-subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.specialty-detail-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .specialty-detail-content {
+    padding: 3rem;
+  }
+}
+
+/* Markdown Content Styles */
+.markdown-content {
+  margin-bottom: 3rem;
+}
+
+.markdown-content h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.markdown-content h2:first-child {
+  margin-top: 0;
+}
+
+.markdown-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-content p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content strong {
+  font-weight: 600;
+  color: rgb(13 148 136);
+}
+
+.markdown-content em {
+  font-style: italic;
+}
+
+.markdown-content a {
+  color: rgb(13 148 136);
+  text-decoration: underline;
+}
+
+.markdown-content a:hover {
+  color: rgb(15 118 110);
+}
+
+.markdown-content code {
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.markdown-content pre {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid rgb(13 148 136);
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* Tables */
+.markdown-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.markdown-content table thead {
+  background-color: rgb(13 148 136);
+  color: white;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+.markdown-content table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.markdown-content table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+/* Horizontal Rule */
+.markdown-content hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Task Lists */
+.markdown-content input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  accent-color: rgb(13 148 136);
+}
+
+/* Highlighted Text */
+.markdown-content mark {
+  background-color: #fef3c7;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+/* Info/Warning/Success Boxes - using blockquotes with emojis */
+.markdown-content blockquote.markdown-blockquote {
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  margin: 1.5rem 0;
+  position: relative;
+  background: #f0fdfa;
+}
+
+.markdown-content blockquote.markdown-blockquote::before {
+  content: 'ℹ️';
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Nested Lists */
+.markdown-content ul ul,
+.markdown-content ol ul,
+.markdown-content ul ol,
+.markdown-content ol ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Definition Lists */
+.markdown-content dl {
+  margin-bottom: 1rem;
+}
+
+.markdown-content dt {
+  font-weight: 600;
+  color: rgb(13 148 136);
+  margin-top: 1rem;
+}
+
+.markdown-content dd {
+  margin-left: 2rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+/* Keyboard Keys */
+.markdown-content kbd {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-family: monospace;
+  font-size: 0.9em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Abbreviations */
+.markdown-content abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+/* Images */
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Figure with Caption */
+.markdown-content figure {
+  margin: 1.5rem 0;
+}
+
+.markdown-content figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Details/Summary (Collapsible) */
+.markdown-content details {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-content summary {
+  font-weight: 600;
+  color: rgb(13 148 136);
+  cursor: pointer;
+  user-select: none;
+}
+
+.markdown-content summary:hover {
+  color: rgb(15 118 110);
+}
+
+.markdown-content details[open] summary {
+  margin-bottom: 1rem;
+}
+
+/* Footnotes */
+.markdown-content .footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.markdown-content .footnotes ol {
+  padding-left: 1.5rem;
+}
+
+/* Superscript and Subscript */
+.markdown-content sup,
+.markdown-content sub {
+  font-size: 0.75em;
+  line-height: 0;
+}
+
+/* Alert Boxes using HTML comments convention */
+.markdown-content .alert {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid;
+}
+
+.markdown-content .alert-info {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
+.markdown-content .alert-warning {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
+}
+
+.markdown-content .alert-success {
+  background-color: #d1fae5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.markdown-content .alert-error {
+  background-color: #fee2e2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.specialty-section {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.specialty-section:last-of-type {
+  border-bottom: none;
+}
+
+.specialty-section-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.specialty-section-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+.specialty-section-text p {
+  margin-bottom: 1rem;
+}
+
+.specialty-section-text h1,
+.specialty-section-text h2,
+.specialty-section-text h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.specialty-section-text h1 {
+  font-size: 2rem;
+}
+
+.specialty-section-text h2 {
+  font-size: 1.5rem;
+}
+
+.specialty-section-text h3 {
+  font-size: 1.25rem;
+}
+
+.specialty-section-text ul,
+.specialty-section-text ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.specialty-section-text li {
+  margin-bottom: 0.5rem;
+}
+
+.specialty-section-text a {
+  color: #0d9488;
+  text-decoration: underline;
+}
+
+.specialty-section-text a:hover {
+  color: #0f766e;
+}
+
+.specialty-section-text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.specialty-section-text blockquote {
+  border-left: 4px solid #0d9488;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.specialty-section-text strong {
+  font-weight: 700;
+}
+
+.specialty-section-text em {
+  font-style: italic;
+}
+
+.specialty-detail-cta {
+  background: linear-gradient(to bottom right, rgb(240 253 250), rgb(204 251 241));
+  border-radius: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.specialty-cta-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgb(13 148 136);
+  margin-bottom: 1rem;
+}
+
+.specialty-cta-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.specialty-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .specialty-cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.specialty-cta-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s;
+  text-decoration: none;
+  min-width: 200px;
+}
+
+.specialty-cta-btn.primary {
+  background-color: rgb(13 148 136);
+  color: white;
+}
+
+.specialty-cta-btn.primary:hover {
+  background-color: rgb(15 118 110);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-cta-btn.secondary {
+  background-color: #25D366;
+  color: white;
+}
+
+.specialty-cta-btn.secondary:hover {
+  background-color: #20BA5A;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

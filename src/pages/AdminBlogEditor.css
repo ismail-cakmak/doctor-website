@@ -1,0 +1,239 @@
+.admin-blog-editor {
+  max-width: 900px;
+  position: relative;
+}
+
+.admin-success-notification {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #10b981;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  z-index: 1000;
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.admin-blog-editor-header {
+  margin-bottom: 2rem;
+}
+
+.admin-blog-editor-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #e2e8f0;
+  color: #2d3748;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+
+.admin-blog-editor-back:hover {
+  background: #cbd5e0;
+}
+
+.admin-blog-editor-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.admin-blog-editor-form {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-blog-editor-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-blog-editor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-blog-editor-label {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.required {
+  color: #e53e3e;
+}
+
+.admin-blog-editor-input,
+.admin-blog-editor-textarea {
+  padding: 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.admin-blog-editor-input:focus,
+.admin-blog-editor-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.admin-blog-editor-input.error,
+.admin-blog-editor-textarea.error {
+  border-color: #fc8181;
+}
+
+.admin-blog-editor-textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.admin-blog-editor-help {
+  font-size: 0.875rem;
+  color: #718096;
+  margin: 0;
+}
+
+.admin-blog-editor-error {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.admin-blog-editor-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.admin-blog-editor-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.admin-blog-editor-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-blog-editor-btn.cancel {
+  background: #e2e8f0;
+  color: #2d3748;
+}
+
+.admin-blog-editor-btn.cancel:hover {
+  background: #cbd5e0;
+}
+
+.admin-blog-editor-btn.save {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.admin-blog-editor-btn.save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .admin-blog-editor {
+    max-width: 100%;
+  }
+  
+  .admin-blog-editor-title {
+    font-size: 2rem;
+  }
+  
+  .admin-blog-editor-form {
+    padding: 1.5rem;
+  }
+  
+  .admin-blog-editor-section {
+    gap: 1.25rem;
+  }
+  
+  .admin-blog-editor-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .admin-blog-editor-actions {
+    flex-direction: column-reverse;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .admin-blog-editor-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-blog-editor-title {
+    font-size: 1.5rem;
+  }
+  
+  .admin-blog-editor-form {
+    padding: 1rem;
+  }
+  
+  .admin-blog-editor-section {
+    gap: 1rem;
+  }
+  
+  .admin-blog-editor-input,
+  .admin-blog-editor-textarea {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .admin-blog-editor-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+}
