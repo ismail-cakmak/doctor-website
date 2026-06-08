@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Calendar, User, Tag } from "lucide-react"
 import { getBlogPosts } from '../utils/supabaseDataManager'
 import { Link } from 'react-router-dom'
+import { publicAsset } from '../utils/paths'
 import './BlogPage.css'
 
 export default function BlogPage() {
@@ -42,7 +43,7 @@ export default function BlogPage() {
             >
               <div className="blog-page-image-wrapper">
                 <img
-                  src={post.image || "/placeholder.svg"}
+                  src={publicAsset(post.image || "/placeholder.svg")}
                   alt={post.title}
                   className="blog-page-image"
                 />
@@ -78,4 +79,3 @@ export default function BlogPage() {
     </div>
   )
 }
-

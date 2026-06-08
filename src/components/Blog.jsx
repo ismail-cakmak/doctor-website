@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { getBlogPosts } from '../utils/supabaseDataManager'
+import { publicAsset } from '../utils/paths'
 import './Blog.css'
 
 export default function Blog() {
@@ -45,7 +46,7 @@ export default function Blog() {
             >
               <div className="blog-image-wrapper">
                 <img
-                  src={post.image || "/placeholder.svg"}
+                  src={publicAsset(post.image || "/placeholder.svg")}
                   alt={post.title}
                   className="blog-image"
                 />

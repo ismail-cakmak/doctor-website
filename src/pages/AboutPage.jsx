@@ -1,4 +1,5 @@
 import { Award, Heart, Users, CheckCircle2, Star } from "lucide-react"
+import { appPath, publicAsset } from "../utils/paths"
 import './AboutPage.css'
 
 export default function AboutPage() {
@@ -75,7 +76,7 @@ const timeline = [
           <div className="about-mission-grid">
             <div className="about-mission-image">
               <img 
-                src="/sabri keser.jpeg" 
+                src={publicAsset("/sabri keser.jpeg")} 
                 alt="Doktor portresi" 
                 className="mission-img"
               />
@@ -154,7 +155,7 @@ Evli ve 2 çocuk babasıyım.
               Uzmanlığım ve modern yaklaşımlarla sağlık sorunlarınızda yanınızda olayım
             </p>
             <div className="about-cta-buttons">
-              <a href="/#contact" className="about-cta-button primary">
+              <a href={appPath("/#contact")} className="about-cta-button primary">
                 Randevu Alın
               </a>
               <a href="tel:+905551234567" className="about-cta-button secondary">
@@ -167,4 +168,3 @@ Evli ve 2 çocuk babasıyım.
     </div>
   )
 }
-

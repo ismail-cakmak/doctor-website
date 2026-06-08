@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { Menu, X, Phone } from "lucide-react"
+import { appPath, publicAsset } from "../utils/paths"
 import './Header.css'
 
 export default function Header() {
@@ -20,7 +21,7 @@ export default function Header() {
     
     if (location.pathname !== '/') {
       // Navigate to home page first, then scroll
-      window.location.href = '/#specialties'
+      window.location.href = appPath('/#specialties')
     } else {
       // Already on home page, just scroll
       const specialtiesSection = document.getElementById('specialties')
@@ -35,7 +36,7 @@ export default function Header() {
       <div className="header-container">
         <div className="header-inner">
           <Link to="/" className="header-logo-wrapper">
-            <img src="/new_logo.png" alt="Logo" className="header-logo-image" />
+            <img src={publicAsset("/new_logo.png")} alt="Logo" className="header-logo-image" />
             <span className="header-logo-text">Dr. Bülent Sabri Keser</span>
           </Link>
 
@@ -54,12 +55,12 @@ export default function Header() {
               Blog
             </Link>
             <a 
-              href={isHomePage ? "#location" : "/#location"} 
+              href={isHomePage ? "#location" : appPath("/#location")} 
               className="header-nav-link"
               onClick={(e) => {
                 if (!isHomePage) {
                   e.preventDefault()
-                  window.location.href = '/#location'
+                  window.location.href = appPath('/#location')
                 }
               }}
             >
@@ -93,13 +94,13 @@ export default function Header() {
               Blog
             </Link>
             <a 
-              href={isHomePage ? "#location" : "/#location"} 
+              href={isHomePage ? "#location" : appPath("/#location")} 
               className="header-nav-link" 
               onClick={(e) => {
                 handleNavClick()
                 if (!isHomePage) {
                   e.preventDefault()
-                  window.location.href = '/#location'
+                  window.location.href = appPath('/#location')
                 }
               }}
             >

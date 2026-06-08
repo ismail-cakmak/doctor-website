@@ -19,9 +19,13 @@ import AdminVideosList from "./pages/AdminVideosList"
 import AdminVideoEditor from "./pages/AdminVideoEditor"
 import ProtectedRoute from "./components/ProtectedRoute"
 
+const routerBasename = import.meta.env.BASE_URL === "/"
+  ? undefined
+  : import.meta.env.BASE_URL.replace(/\/$/, "")
+
 function App() {
   return (
-    <Router>
+    <Router basename={routerBasename}>
       <Routes>
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLogin />} />

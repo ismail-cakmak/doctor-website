@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { publicAsset } from '../utils/paths'
 import './About.css'
 
 export default function About() {
@@ -17,18 +19,18 @@ Hasta odaklı ve kanıta dayalı bir yaklaşımla çalışan Dr. Keser; erkek in
             </p>
 
             <div className="about-cta-wrapper">
-              <a
-                href="/hakkimda"
+              <Link
+                to="/hakkimda"
                 className="about-cta-button"
               >
                 Hakkımda
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="about-image-wrapper">
             <img 
-              src="/sabri keser.jpeg" 
+              src={publicAsset("/sabri keser.jpeg")} 
               alt="Dr. Sabri Keser" 
               className="about-image"
             />

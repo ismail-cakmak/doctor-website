@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getBlogPostBySlug } from '../utils/supabaseDataManager'
+import { publicAsset } from '../utils/paths'
 import './BlogPostPage.css'
 
 export default function BlogPostPage() {
@@ -53,7 +54,7 @@ export default function BlogPostPage() {
 
       <div className="blog-post-container">
         <div className="blog-post-image-wrapper">
-          <img src={post.image} alt={post.title} className="blog-post-image" />
+          <img src={publicAsset(post.image || "/placeholder.svg")} alt={post.title} className="blog-post-image" />
         </div>
         <article className="blog-post-content">
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
@@ -65,5 +66,4 @@ export default function BlogPostPage() {
     </div>
   )
 }
-
 

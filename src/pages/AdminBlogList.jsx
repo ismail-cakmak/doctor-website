@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getBlogPosts, deleteBlogPost } from '../utils/supabaseDataManager';
 import { Plus, Edit, Trash2, Calendar, User } from 'lucide-react';
+import { publicAsset } from '../utils/paths';
 import './AdminBlogList.css';
 
 export default function AdminBlogList() {
@@ -71,7 +72,7 @@ export default function AdminBlogList() {
         {filteredPosts.map(post => (
           <div key={post.id} className="admin-blog-card">
             <div className="admin-blog-card-image">
-              <img src={post.image || '/placeholder.svg'} alt={post.title} />
+              <img src={publicAsset(post.image || '/placeholder.svg')} alt={post.title} />
               <span className="admin-blog-card-category">{post.category}</span>
             </div>
             
