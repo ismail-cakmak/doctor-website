@@ -62,7 +62,13 @@ Restart the dev server after changing env vars.
 
 ## 6. Deploy
 
-For Netlify or Vercel, add the same two Supabase env vars in the hosting dashboard, then redeploy.
+For GitHub Pages, add these repository secrets before running the Pages workflow:
+
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_ANON_KEY`
+
+The workflow passes those secrets into `npm run build`, so Vite can bake them into the static files.
+
 For Netlify or Vercel, add the same two Supabase env vars in the hosting dashboard, then redeploy.
 
 The `public/_redirects` file is included for Netlify so direct React Router URLs keep working.

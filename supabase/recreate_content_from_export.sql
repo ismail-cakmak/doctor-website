@@ -5,7 +5,7 @@
 begin;
 
 drop table if exists public.videos cascade;
-drop table if exists public.specialties cascade;
+drop table if e/*  */xists public.specialties cascade;
 drop table if exists public.blog_posts cascade;
 
 create table public.blog_posts (
