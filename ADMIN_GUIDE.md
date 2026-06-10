@@ -7,9 +7,7 @@ Admin paneline erişmek için tarayıcınızda aşağıdaki URL'yi ziyaret edin:
 http://localhost:5173/admin
 ```
 
-**Varsayılan Şifre:** `admin123`
-
-> ⚠️ **ÖNEMLİ:** Güvenlik için bu şifreyi değiştirmeniz önerilir. Şifreyi değiştirmek için `src/utils/auth.js` dosyasındaki `ADMIN_PASSWORD` değişkenini düzenleyin.
+Admin girişi Supabase Auth ile yapılır. Giriş için Supabase projesinde oluşturulan admin kullanıcısının e-posta adresi ve şifresi gerekir.
 
 ## Admin Panel Özellikleri
 
@@ -69,20 +67,14 @@ Editör, Microsoft Word benzeri bir arayüze sahiptir:
 
 ## Veri Saklama
 
-Tüm veriler tarayıcınızın **localStorage**'ında saklanır. Bu şu anlama gelir:
-- Veriler tarayıcınızda yerel olarak saklanır
-- Tarayıcı önbelleğini temizlerseniz veriler silinebilir
-- Farklı tarayıcılar veya cihazlar arasında senkronize olmaz
-
-> 💡 **Gelecek Geliştirme:** Verileri kalıcı olarak saklamak için bir backend sistemi entegre edilebilir.
+Veriler Supabase veritabanında saklanır. Admin paneli yalnızca Supabase ortam değişkenleri yapılandırılmışsa giriş kabul eder.
 
 ## Önemli Notlar
 
 ### Güvenlik
 - Admin paneline erişim şifre ile korunmaktadır
-- Oturum 24 saat süreyle geçerlidir
-- Güvenlik için şifreyi düzenli olarak değiştirin
-- Üretim ortamında daha güçlü bir kimlik doğrulama sistemi kullanın
+- Admin işlemleri için Supabase Auth kullanılır
+- Supabase Row Level Security politikalarının yazma/silme işlemlerini yalnızca yetkili kullanıcılara açtığından emin olun
 
 ### İçerik Formatı
 - Blog içeriği HTML olarak saklanır
@@ -90,23 +82,15 @@ Tüm veriler tarayıcınızın **localStorage**'ında saklanır. Bu şu anlama g
 - Tüm içerikler sayfalarda güvenli bir şekilde render edilir
 
 ### Yedekleme
-LocalStorage verilerini yedeklemek için:
-1. Tarayıcı geliştirici araçlarını açın (F12)
-2. "Application" veya "Storage" sekmesine gidin
-3. "Local Storage" altında sitenizi bulun
-4. İçeriği kopyalayıp bir dosyaya kaydedin
+Verileri yedeklemek için Supabase panelindeki tablo dışa aktarma araçlarını veya proje yedekleme seçeneklerini kullanın.
 
 ## Sorun Giderme
 
 ### Giriş yapamıyorum
-- Şifrenin doğru olduğundan emin olun (varsayılan: `admin123`)
+- Supabase admin e-posta adresi ve şifresinin doğru olduğundan emin olun
+- `.env.local` veya GitHub Pages secrets içinde `VITE_SUPABASE_URL` ve `VITE_SUPABASE_ANON_KEY` değerlerinin tanımlı olduğundan emin olun
 - Tarayıcı önbelleğini temizlemeyi deneyin
 - Farklı bir tarayıcı deneyin
-
-### Değişiklikler kayboldu
-- LocalStorage tarayıcı tarafından temizlenmiş olabilir
-- Tarayıcı gizli modunda değilsiniz emin olun
-- Tarayıcı önbelleği otomatik temizleme ayarlarını kontrol edin
 
 ### İçerik görünmüyor
 - Tarayıcı geliştirici konsolunu (F12) açın ve hata mesajlarını kontrol edin
@@ -118,7 +102,7 @@ LocalStorage verilerini yedeklemek için:
 - **React**: UI framework
 - **React Router**: Sayfa yönlendirme
 - **React Quill**: WYSIWYG editör
-- **LocalStorage API**: Veri saklama
+- **Supabase**: Veri saklama ve admin kimlik doğrulama
 - **Lucide React**: İkonlar
 
 ### Dosya Yapısı

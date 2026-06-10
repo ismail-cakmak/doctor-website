@@ -26,7 +26,7 @@ npm run dev
 
 The application will open at `http://localhost:3000`
 
-Without Supabase env vars, the site runs in local mode and stores admin edits in browser `localStorage`.
+Without Supabase env vars, the public site can use local fallback content, but admin login is disabled.
 
 ### Reconnect Supabase
 

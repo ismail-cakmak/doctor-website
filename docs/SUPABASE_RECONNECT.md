@@ -2,7 +2,7 @@
 
 The site now has two data modes:
 
-- Local mode: used when `VITE_SUPABASE_URL` or `VITE_SUPABASE_ANON_KEY` is missing. Content is stored in the browser with `localStorage`.
+- Local mode: used when `VITE_SUPABASE_URL` or `VITE_SUPABASE_ANON_KEY` is missing. The public site can use local fallback content, but admin login is disabled.
 - Supabase mode: used automatically when both Supabase env vars are present.
 
 ## 1. Create or recover a Supabase project
@@ -45,11 +45,7 @@ VITE_SUPABASE_URL=https://your-project-id.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-public-key
 ```
 
-For local-only work without Supabase, leave those blank and optionally set:
-
-```env
-VITE_LOCAL_ADMIN_PASSWORD=your-local-password
-```
+Without these Supabase variables, admin login is disabled.
 
 ## 5. Run locally
 
