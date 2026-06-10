@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Phone } from "lucide-react"
+import DoctorTakvimiWidget from "./DoctorTakvimiWidget"
 import "./Hero.css"
 
 export default function Hero() {
@@ -68,6 +69,8 @@ export default function Hero() {
               </svg>
               <span>WhatsApp Mesaj</span>
             </a>
+
+            <DoctorTakvimiWidget />
           </div>
         </div>
       </div>

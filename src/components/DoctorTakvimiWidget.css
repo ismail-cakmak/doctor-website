@@ -1,0 +1,53 @@
+.doctor-takvimi-widget {
+  width: 100%;
+}
+
+.doctor-takvimi-widget .doctor-takvimi-link {
+  width: 100%;
+  min-height: 3.75rem;
+  background: linear-gradient(135deg, #f8fffd 0%, #d9fbf4 45%, #99f6e4 100%);
+  color: #0f3f3a;
+  padding: 1.1rem 2rem;
+  border: 1px solid rgb(255 255 255 / 0.9);
+  border-radius: 0.75rem;
+  font-weight: 800;
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.85),
+    0 18px 34px rgba(8, 47, 73, 0.28),
+    0 0 0 4px rgb(204 251 241 / 0.24);
+  text-decoration: none;
+  letter-spacing: 0;
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+.doctor-takvimi-widget .doctor-takvimi-link:hover {
+  color: #083344;
+  filter: saturate(1.06) brightness(1.02);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.95),
+    0 24px 42px rgba(8, 47, 73, 0.36),
+    0 0 0 5px rgb(204 251 241 / 0.3);
+  transform: translateY(-2px);
+}
+
+.doctor-takvimi-icon {
+  flex: 0 0 auto;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+@media (max-width: 480px) {
+  .doctor-takvimi-widget .doctor-takvimi-link {
+    font-size: 1.2rem;
+  }
+}
+
+.doctor-takvimi-widget iframe,
+.doctor-takvimi-widget > div {
+  max-width: 100%;
+}
